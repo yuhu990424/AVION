@@ -1,0 +1,6 @@
+DATASET:
+  NAME: PatternNet
+  KEY: patternnet
+  NUM_CLASSES: 38
+  EXPECTED_IMAGES: 30400
+

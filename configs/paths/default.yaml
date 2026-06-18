@@ -1,0 +1,6 @@
+REPO_ROOT: /home/yu.hu/AVION
+DATA_ROOT: ${oc.env:AVION_DATA,/data/avion-repro/data}
+CKPT_ROOT: ${oc.env:AVION_CKPT,/data/avion-repro/checkpoints}
+CACHE_ROOT: ${oc.env:AVION_CACHE,/data/avion-repro/cache}
+OUTPUT_ROOT: ${oc.env:AVION_OUTPUT,/data/avion-repro/output}
+

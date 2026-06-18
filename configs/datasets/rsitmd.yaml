@@ -1,0 +1,5 @@
+DATASET:
+  NAME: RSITMD
+  KEY: rsitmd
+  TASK: retrieval
+

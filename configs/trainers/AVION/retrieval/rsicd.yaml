@@ -1,0 +1,5 @@
+DATASET:
+  KEY: rsicd
+  PROTOCOL: retrieval
+RETRIEVAL:
+  FIXED_GALLERY: true

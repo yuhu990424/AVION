@@ -1,0 +1,17 @@
+torch
+torchvision
+open_clip_torch
+timm
+pillow
+numpy<2.3
+pandas
+pyarrow
+scikit-learn
+tqdm
+omegaconf
+PyYAML
+datasets
+huggingface_hub
+gdown
+google-genai
+pytest

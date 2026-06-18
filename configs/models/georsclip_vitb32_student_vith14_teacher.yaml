@@ -1,0 +1,44 @@
+MODEL:
+  NAME: AVION_GeoRSCLIP
+  IMAGE_SIZE: 224
+  TEACHER:
+    BACKBONE: ViT-H/14
+    PRETRAINED: laion2b_s32b_b79k
+    CKPT: ${oc.env:AVION_CKPT,/data/avion-repro/checkpoints}/georsclip/RS5M_ViT-H-14.pt
+    FROZEN: true
+  STUDENT:
+    BACKBONE: ViT-B/32
+    PRETRAINED: openai
+    CKPT: ${oc.env:AVION_CKPT,/data/avion-repro/checkpoints}/georsclip/RS5M_ViT-B-32.pt
+    FROZEN_BACKBONE: true
+  PROMPT:
+    VISUAL_TOKENS_PER_LAYER: 8
+    TEXT_TOKENS_PER_LAYER: 4
+    DEEP: true
+    INIT: normal_0.02
+
+TRAIN:
+  OPTIM: adamw
+  LR: 0.0005
+  BATCH_SIZE: 4
+  PRECISION: amp
+  SEEDS: [1, 2, 3]
+  EPOCHS:
+    FEWSHOT: 100
+    BASE_TO_NOVEL: 50
+    RETRIEVAL: 50
+
+DISTILL:
+  LAMBDA_IMG: 0.5
+  LAMBDA_TEXT: 0.5
+  LAMBDA_LOGIT: 1.0
+  LOGIT_WARMUP_RATIO: 0.30
+  TEMPERATURE: 2.0
+
+PROTOTYPE:
+  KP: 30
+  BETA: 10.0
+  GAMMA: 2.0
+  MAD_THRESHOLD: 3.0
+  EPS: 1.0e-8
+

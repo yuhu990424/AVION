@@ -1,0 +1,9 @@
+DATASET:
+  KEY: joint_rsitmd_rsicd
+  PROTOCOL: retrieval
+  TRAIN_DATASETS: [rsitmd, rsicd]
+  TEST_DATASETS: [rsitmd, rsicd]
+RETRIEVAL:
+  FIXED_GALLERY: true
+  CACHE_GALLERY_BEFORE_ADAPTATION: true
+  TRAIN_LOSS: symmetric_clip_ce

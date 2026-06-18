@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.env
+.env.*
+.venv/
+/venv/
+/env/
+/AVION/
+
+# Codex/session metadata
+/.agents/
+/.codex/
+
+# Data, checkpoints, and experiment artifacts
+/data/
+/cache/
+/output/
+/outputs/
+/checkpoints/
+/wandb/
+/runs/
+/logs/
+*.log
+
+# Model and tensor artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npz
+*.npy
+*.parquet
+
+# Large local documents
+*.pdf
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

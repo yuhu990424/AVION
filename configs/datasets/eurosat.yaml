@@ -1,0 +1,6 @@
+DATASET:
+  NAME: EuroSAT
+  KEY: eurosat
+  NUM_CLASSES: 10
+  EXPECTED_IMAGES: 27000
+

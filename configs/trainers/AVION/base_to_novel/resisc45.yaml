@@ -1,0 +1,5 @@
+DATASET:
+  KEY: resisc45
+  PROTOCOL: base_to_novel
+  NUM_SHOTS: 16
+  BASE_NOVEL_POLICY: seeded_random_50_50

@@ -1,0 +1,5 @@
+DATASET:
+  NAME: RSICD
+  KEY: rsicd
+  TASK: retrieval
+

@@ -1,0 +1,6 @@
+DATASET:
+  NAME: UCMerced
+  KEY: ucmerced
+  NUM_CLASSES: 21
+  EXPECTED_IMAGES: 2100
+

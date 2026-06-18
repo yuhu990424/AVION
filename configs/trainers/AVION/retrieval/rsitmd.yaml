@@ -1,0 +1,5 @@
+DATASET:
+  KEY: rsitmd
+  PROTOCOL: retrieval
+RETRIEVAL:
+  FIXED_GALLERY: true

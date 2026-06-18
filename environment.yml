@@ -1,0 +1,15 @@
+name: AVION
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - "numpy<2.3"
+  - pandas
+  - pillow
+  - scikit-learn
+  - tqdm
+  - pip:
+      - -r requirements.txt

@@ -1,0 +1,3 @@
+KEY = "patternnet"
+NAME = "PatternNet"
+

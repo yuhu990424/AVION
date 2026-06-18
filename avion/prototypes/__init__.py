@@ -1,0 +1,2 @@
+"""Teacher prototype construction."""
+

@@ -1,0 +1,3 @@
+KEY = "ucmerced"
+NAME = "UCMerced"
+

@@ -1,0 +1,3 @@
+DATASET:
+  KEY: ucmerced
+  PROTOCOL: few_shot

@@ -1,0 +1,30 @@
+LLM:
+  PROVIDER: gemini
+  MODEL: gemini-2.5-flash
+  API_KEY_ENV: GEMINI_API_KEY
+  PROMPT_VERSION: rs_scene_v1
+  CAPTIONS_PER_CLASS: 30
+  TEMPERATURE: 0.3
+  TOP_P: 0.95
+  MAX_RETRIES: 5
+  RETRY_SLEEP_SECONDS: 5.0
+
+RS_FLAG:
+  POSITIVE_TOKENS:
+    - overhead
+    - aerial view
+    - satellite imagery
+    - nadir
+    - orthorectified
+    - multispectral
+    - SAR
+  NEGATIVE_TOKENS:
+    - street
+    - indoor
+    - selfie
+    - portrait
+    - close-up
+    - ground level
+  MIN_WORDS: 6
+  MAX_WORDS: 20
+
